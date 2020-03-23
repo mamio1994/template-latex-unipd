@@ -1,0 +1,21 @@
+Per inserire delle formule matematiche è possibile utilizzare due metodi:
+\begin{itemize}
+\item in linea: inserendo la formula tra due caratteri \$. 
+\item utilizzando l'ambiente \textit{equation}.
+\end{itemize}
+
+%Il comando noindent viene utilizzato per evitare l'indentazione del paragrafo
+\noindent Esempio di formula in linea $x(t)=x_{0} + v_{0}t + \frac{1}{2}at^{2}$.
+
+\noindent Esempio di utilizzo dell'ambiente \textit{equation}:
+\begin{equation}\label{eq:legge_oraria}
+x(t)=x_{0} + v_{0}t + \frac{1}{2}at^{2}
+\end{equation}
+Possiamo usare le \textit{label} anche per le equazioni. Legge oraria nell'Equazione \ref{eq:legge_oraria}.
+Infine, un esempio di formula su più righe:
+\begin{equation}
+\begin{split}
+x(t) &= x_{0} + v_{0}t + \frac{1}{2}at^{2} \\ & =
+		x_{0} + v_{0}t + \frac{1}{2}\frac{F}{m}t^{2}
+\end{split}
+\end{equation}
