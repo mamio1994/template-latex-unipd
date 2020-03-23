@@ -1,0 +1,64 @@
+\newfont{\ttvar}{cmvtt10 scaled 1200}     % nuovo carattere tipi courier a spaziatura variabile per le dimostrazioni
+
+% margini senato
+\textwidth       =  14.50 cm            % larghezza 21 cm - 4 cm (sinistro) - 2.5 (destro)
+\textheight      =  23.10 cm            % altezza 29.7 cm - 3 cm (superiore) - 2 (inferiore)
+\topmargin       =   0.00 cm            % margine superiore 3 cm diminuito di 1 inch
+\oddsidemargin   =   1.46 cm            % margine sinistro 4 cm diminuito di 1 inch
+\evensidemargin  =  -0.04 cm            % margine destro 2.5 cm diminuito di un inch
+
+\setlength{\headsep}{1.0cm}
+\setlength{\footskip}{1.0cm}
+\parindent = 0.7cm
+\captionmargin = 0.7cm
+
+%Interlinea 1.5
+\onehalfspacing
+
+% stile pagina
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1 }{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}{}}
+\fancyhead{}
+\fancyhead[LE,RO]{\sffamily \thepage}
+\fancyhead[RE]{\sffamily \leftmark}
+\fancyhead[LO]{\sffamily \rightmark}
+\fancyfoot{}
+
+% ridefinisco lo stile plain
+\fancypagestyle{plain}{ \fancyhead{} \fancyfoot{}
+\fancyfoot[C]{\sffamily \thepage}
+\renewcommand{\headrulewidth}{0pt}}
+
+% stile per i titoli
+\allsectionsfont{\sffamily \raggedright}
+
+% definisco i colori
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolourwhite}{rgb}{1,1,1}
+
+%definisco stile listati di codice
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\lstset{emph={RandomForestClassifier, RandomizedSearchCV, GridSearchCV},emphstyle=\underbar}

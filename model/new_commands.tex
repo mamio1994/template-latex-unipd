@@ -1,0 +1,76 @@
+%*****************
+%* nuovi comandi *
+%*****************
+
+\newcommand{\abs}[1]{\left|#1\right|}                               % modulo
+\newcommand{\dato}{\left|\right.}                                   % probabilit\`{a} condizionata
+\newcommand{\fun}[1]{\mathrm{#1}}                                   % stile funzione
+\newcommand{\imp}{\;\;\Longrightarrow\;\;}                          % implicazione
+\newcommand{\norma}[1]{\left\| #1 \right\|}                         % norma
+\newcommand{\prob}[1]{\mathrm{P}\!\left[#1\right]}                  % probabilit\`{a}
+\newcommand{\expect}[1]{\mathrm{E}\!\left[#1\right]}                % aspettazione
+\newcommand{\sse}{\;\;\Longleftrightarrow\;\;}                      % se e solo se
+\newcommand{\vect}[1]{{\boldsymbol{\mathrm{#1}}}}                   % stile vettore
+\newcommand{\real}[1]{\fun{Re}\left[#1\right]}                      % parte reale
+\newcommand{\imag}[1]{\fun{Im}\left[#1\right]}                      % parte immaginaria
+\newcommand{\Dim}[1]{\fun{dim}\left[#1\right]}                      % dimensione di una matrice
+\newcommand{\Det}[1]{\fun{det}\left[#1\right]}                      % determinante di una matrice
+\newcommand{\Ker}[1]{\fun{ker}\left[#1\right]}                      % ker di una matrice
+\newcommand{\rango}[1]{\fun{rango}\left[#1\right]}                  % rango di una matrice
+\newcommand{\scalare}[2]{\left\langle #1, #2 \right\rangle}         % prodotto scalare
+\newcommand{\blbrace}{\left  \lbrace}                               % parentesi graffa sinistra grande
+\newcommand{\brbrace}{\right \rbrace}                               % parentesi graffa destra grande
+\newcommand{\sinc}{\fun{sinc}}                                      % sinc
+\newcommand{\rect}{\fun{rect}}                                      % rect
+\newcommand{\rcos}{\fun{rcos}}                                      % rcos
+\newcommand{\sgn}{\fun{sgn}}                                        % sgn
+\newcommand{\N}{\mathbb{N}}                                         % insieme dei numeri naturali
+\newcommand{\Z}{\mathbb{Z}}                                         % insieme dei numeri interi
+\newcommand{\Q}{\mathbb{Q}}                                         % insieme dei numeri razionali
+\newcommand{\R}{\mathbb{R}}                                         % insieme dei numeri reali
+\newcommand{\C}{\mathbb{C}}                                         % insieme dei numeri complessi
+\newcommand{\seq}[2][n]{#2_{0}, #2_{1}, \ldots, \, #2_{#1}}         % sequenza
+\newcommand{\Span}[2][n]
+{\fun{span} \blbrace #2_{1}, #2_{2}, \ldots, \, #2_{#1} \brbrace}   % spazio generato
+\newcommand{\ddt}{\frac{\fun{d}}{\fun{dt}}}                         % derivata
+\newcommand{\Div}[2]{#1 \; \mid \; #2}                              % divide
+\newcommand{\MCD}[2]{\fun{MCD}\(#1, #2\)}                           % massimo comun divisore
+\newcommand{\mcm}[2]{\fun{mcm}\(#1, #2\)}                           % minimo comune multiplo
+\newcommand{\goodgap}{
+                      \hspace{\subfigtopskip}
+                      \hspace{\subfigbottomskip}
+                     }                                              % interlinea opportuna per le sottofigure
+\newcommand{\eng}[1]{\emph{#1}}                                   % inglese
+\newcommand{\virg}[1]{``#1"}                                        % fa una citazione tra virgolette
+%\newcommand{\unit}[2]($\frac{\text{#1}}{\text{#2}}$)                % unit\`{a} di misura
+\newcommand{\textttvar}[1]{{\ttvar #1}}
+
+\definecolor{gray}{gray}{0.9}
+\newcommand{\listato}[1]{\lstset{language=#1, numbers=left, numberstyle=\tiny, stepnumber=2, numbersep=5pt, numberblanklines=false, xleftmargin=5pt, captionpos=b, stringstyle=\ttfamily, columns=flexible, showstringspaces=false, tabsize=2, frame=single, framerule=0pt, backgroundcolor=\color{gray}, basicstyle=\small}}
+
+%****************************
+%* ridefinizioni di comandi *
+%****************************
+
+\renewcommand{\(}{\left(}                                     % parentesi tonda sinistra grande
+\renewcommand{\)}{\right)}                                    % parentesi tonda destra grande
+\renewcommand{\[}{\left[}                                     % parentesi quadra sinistra grande
+\renewcommand{\]}{\right]}                                    % parentesi quadra destra grande
+\renewcommand{\exp}[1]{\fun{e}^{#1}}                          % esponenziale
+\renewcommand{\gcd}[2]{\fun{gcd}\(#1, #2\)}                   % massimo comun divisore
+
+\renewcommand{\lstlistingname}{Listing}
+\renewcommand{\lstlistlistingname}{Elenco dei listati codice}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+%Definizione input e output pseudocodice
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+ 
+%"Nome" della bibliografia
+\addto{\captionsenglish}{%
+  \renewcommand{\bibname}{References}
+}
