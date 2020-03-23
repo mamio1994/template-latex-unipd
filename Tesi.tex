@@ -37,7 +37,18 @@
 \thispagestyle{empty}
 
 \clearpage{\pagestyle{plain}\cleardoublepage}
-
 \input{abstract.tex}
+
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\tableofcontents %Indice
+
+\clearpage{\pagestyle{plain}\cleardoublepage} %Numerazione araba per i capitoli
+\pagenumbering{arabic}
+
+
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\chapter{Primo Capitolo} %Nome capitolo
+\label{chapter:primo_capitolo} %Label per creare riferimenti al capitolo
+\input{intro_cap1.tex} %File in cui verrà scritto il capitolo
 
 \end{document}
