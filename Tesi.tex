@@ -46,9 +46,14 @@
 \pagenumbering{arabic}
 
 
-\clearpage{\pagestyle{plain}\cleardoublepage}
+\clearpage{\pagestyle{plain}\cleardoublepage} %Comando per iniziare il capitolo su pagina dispari
 \chapter{Primo Capitolo} %Nome capitolo
 \label{chapter:primo_capitolo} %Label per creare riferimenti al capitolo
 \input{intro_cap1.tex} %File in cui verrà scritto il capitolo
+
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\chapter{Immagini e Tabelle} 
+\label{chapter:immagini_e_tabelle} 
+\input{intro_cap2.tex} 
 
 \end{document}

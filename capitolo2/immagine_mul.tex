@@ -1,0 +1,23 @@
+Inserire più ``sottofigure" in una figura.
+\begin{figure}[!h]
+\centering
+	%Prima riga
+	\begin{subfigure}{0.35\textwidth} %Controllo della posizione in orizzontale
+		\includegraphics[scale=0.15]{images/test.png} 
+		\caption{}
+	\end{subfigure}
+	\begin{subfigure}{0.35\textwidth}
+		\includegraphics[scale=0.15]{images/test.png}
+		\caption{}
+	\end{subfigure}
+	%Seconda riga
+	\begin{subfigure}{0.35\textwidth}
+		\includegraphics[scale=0.15]{images/test.png} 
+		\caption{}
+	\end{subfigure}
+	\begin{subfigure}{0.35\textwidth}
+		\includegraphics[scale=0.15]{images/test.png}
+		\caption{}
+	\end{subfigure}
+\caption{Esempio di figura composta da 4 figure.}
+\end{figure}
