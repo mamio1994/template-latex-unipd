@@ -1,0 +1,15 @@
+%definisco il layout dell'abstract
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+%Genero l'ambiente per l'abstract
+\newcommand\summaryname{Abstract}
+\newenvironment{Abstract}%
+    {\begin{center}%
+    \bfseries{\summaryname} \end{center}}
+    
+\begin{Abstract}
+\begin{changemargin}{1cm}{1cm}
+Inserire abstract. I margini nell'abstract sono stati ridotti di un centimetro. In caso non si volesse questa riduzione rimuovere \textit{changemargin}.
+\end{changemargin}
+\end{Abstract}

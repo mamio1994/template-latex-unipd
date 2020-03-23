@@ -30,5 +30,14 @@
 \end{center}
 \end{titlepage}
 
+\thispagestyle{empty} %pagina bianca dopo il titolo
+\cleardoublepage
+
+\pagenumbering{roman} %numerazione romana per l'indice, l'abstract e i ringraziamenti
+\thispagestyle{empty}
+
+\clearpage{\pagestyle{plain}\cleardoublepage}
+
+\input{abstract.tex}
 
 \end{document}
